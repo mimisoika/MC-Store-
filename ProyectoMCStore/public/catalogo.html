@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/catalog-style.css">
+    <link rel="stylesheet" href="assets/css/price-range.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Catálogo - MCStore</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+          <a class="logo" href="#">
+            <img src="assets/img/logo-mcstore.png" alt="MC Store">
+            <span class="brand-name">MC<span class="highlight">Store</span></span>
+          </a>
+    
+          <button class="menu-toggle" aria-label="Toggle navigation menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+    
+
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="index.html#inicio" class="nav-link">Inicio</a></li>
+              <li class="nav-item"><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+              <li class="nav-item"><a href="index.html#Soporte" class="nav-link">Soporte</a></li>
+              <li class="nav-item"><a href="index.html#Acerca_De" class="nav-link">Acerca De</a></li>
+            </ul>
+    
+            <form class="search-form">
+              <input type="search" class="search-input" placeholder="Buscar..." aria-label="Buscar">
+            </form>
+    
+            <div class="auth-links">
+              <div class="register-link">
+                <a href="register.html" class="nav-link">Registrar</a>
+              </div>
+              <div class="user-icon">
+                <a href="login.html" class="user-circle" title="Iniciar Sesión">
+                  <i class="fas fa-user"></i>
+                </a>
+              </div>
+              
+            </div>
+          </nav>
+        </div>
+      </header>
+    
+
+    <main class="catalog-main">
+        <div class="catalog-container">
+            <aside class="filters-sidebar">
+                <div class="filter-section">
+                    <h3>Categorías</h3>
+                    <ul class="filter-list">
+                        <li><a href="#">Moldes y Bandejas</a></li>
+                        <li><a href="#">Decoración</a></li>
+                        <li><a href="#">Ingredientes</a></li>
+                        <li><a href="#">Utensilios</a></li>
+                        <li><a href="#">Empaques</a></li>
+                    </ul>
+                </div>
+                <div class="filter-section">
+                    <h3>Precio</h3>
+                    <div class="price-range">
+                        <input type="range" min="0" max="1000" value="500" class="price-slider">
+                        <div class="price-inputs">
+                            <input type="number" placeholder="Min" class="price-input">
+                            <input type="number" placeholder="Max" class="price-input">
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="products-section">
+                <div class="products-header">
+                    <div class="products-count">1-48 de 200 productos</div>
+                    <div class="products-sort">
+                        <select name="sort" id="sort">
+                            <option value="relevant">Más relevantes</option>
+                            <option value="price_asc">Menor precio</option>
+                            <option value="price_desc">Mayor precio</option>
+                            <option value="newest">Más nuevos</option>
+                        </select>
+                        <button class="filters-toggle" aria-label="Toggle filters menu">
+                            <i class="fas fa-filter"></i> Filtros
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/img/product-placeholder.jpg" alt="Molde para Cupcakes">
+                            <div class="product-tags">
+                                <span class="tag-free-shipping">Envío gratis</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Molde de Silicona para 12 Cupcakes</h3>
+                            <div class="product-price">
+                                <span class="price">$299</span>
+                                <span class="discount">15% OFF</span>
+                            </div>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">(150)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <button class="page-btn prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <span class="page-dots">...</span>
+                    <button class="page-btn">10</button>
+                    <button class="page-btn next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img src="assets/img/logo-mcstore.png" alt="MCStore">
+            <span class="brand-name">MC<span class="highlight">Store</span></span>
+          </div>
+          <div class="footer-content">
+            <div class="footer-section">
+              <h4>Productos</h4>
+              <ul class="footer-links">
+                <li><a href="#">Insumos de Repostería</a></li>
+                <li><a href="#">Decoraciones</a></li>
+                <li><a href="#">Herramientas</a></li>
+                <li><a href="#">Novedades</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4>Soporte</h4>
+              <ul class="footer-links">
+                <li><a href="#">Centro de Ayuda</a></li>
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Devoluciones</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4>Compañía</h4>
+              <ul class="footer-links">
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Trabaja con Nosotros</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4>Síguenos</h4>
+              <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 MCStore. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+    </body>
+<script src="assets/js/catalogo.js"></script>
+</body>
+</html>

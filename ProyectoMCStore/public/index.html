@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>MC Store</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container">
+      <a class="logo" href="#">
+        <img src="assets/img/logo-mcstore.png" alt="MC Store">
+        <span class="brand-name">MC<span class="highlight">Store</span></span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+          <li class="nav-item"><a href="#Soporte" class="nav-link">Soporte</a></li>
+          <li class="nav-item"><a href="#Acerca_De" class="nav-link">Acerca De</a></li>
+        </ul>
+
+        <form class="search-form">
+          <input type="search" class="search-input" placeholder="Buscar..." aria-label="Buscar">
+        </form>
+
+        <div class="auth-links">
+          <div class="register-link">
+            <a href="register.html" class="nav-link">Registrar</a>
+          </div>
+          <div class="user-icon">
+            <a href="login.html" class="user-circle" title="Iniciar Sesión">
+              <i class="fas fa-user"></i>
+            </a>
+          </div>
+          
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- seccion de Inicio -->
+    <section id="inicio" class="hero-section">
+      <div class="hero-content">
+        <h1>Bienvenidos a MCStore</h1>
+        <p class="hero-description">Tu socio confiable en el mundo de la repostería profesional</p>
+        <div class="hero-features">
+          <div class="feature">
+            <i class="fas fa-check-circle"></i>
+            <span>Productos de Alta Calidad</span>
+          </div>
+          <div class="feature">
+            <i class="fas fa-truck"></i>
+            <span>Envíos a Toda B.C.S</span>
+          </div>
+          <div class="feature">
+            <i class="fas fa-headset"></i>
+            <span>Respuesta Rapida a cualquier problema</span>
+          </div>
+        </div>
+        <a href="catalogo.html" class="cta-button">Ver Catálogo</a>
+      </div>
+    </section>
+    <!-- Fin seccion de inicio -->
+
+    <!-- seccion de Acerca De-->
+    <section id="Acerca_De" class="about-section">
+      <div class="container">
+        <h2 class="section-title">Acerca de Nosotros</h2>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="card-icon">
+              <i class="fas fa-store"></i>
+            </div>
+            <h3>Nuestra Empresa</h3>
+            <p>Comcercializadora MC es una comercializadora líder en el mercado de repostería, dedicada a ofrecer
+              productos y decoraciones de alta calidad para pasteleros profesionales y aficionados. Desde nuestro
+              inicio, nos hemos convertido en el socio confiable para hacer realidad las creaciones más dulces y
+              creativas.</p>
+          </div>
+
+          <div class="about-card">
+            <div class="card-icon">
+              <i class="fas fa-birthday-cake"></i>
+            </div>
+            <h3>Misión</h3>
+            <p>Nuestra misión es proporcionar los mejores productos e insumos para repostería, junto con decoraciones
+              innovadoras que permitan a nuestros clientes crear obras maestras culinarias excepcionales, manteniendo
+              los más altos estándares de calidad y servicio.</p>
+          </div>
+
+          <div class="about-card">
+            <div class="card-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Valores</h3>
+            <ul class="values-list">
+              <li>Calidad garantizada en productos de repostería</li>
+              <li>Innovación en decoraciones y tendencias</li>
+              <li>Pasión por el arte de la repostería</li>
+              <li>Compromiso con el éxito de nuestros clientes</li>
+            </ul>
+          </div>
+
+          <div class="about-card">
+            <div class="card-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <h3>¿Por qué Elegirnos?</h3>
+            <ul class="features-list">
+              <li>Amplio catálogo de productos de repostería</li>
+              <li>Decoraciones exclusivas y tendencias actuales</li>
+              <li>Asesoramiento especializado</li>
+              <li>Precios competitivos en el mercado</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact CTA -->
+        <div class="contact-cta">
+          <h3>¿Tienes alguna pregunta sobre nuestros productos?</h3>
+          <p>Nuestro equipo de expertos en repostería está listo para ayudarte</p>
+          <a href="https://wa.me/1234567890" class="cta-button">Contáctanos</a>
+        </div>
+      </div>
+    </section>
+    <!-- Fin seccion de Acerca De-->
+
+    <!-- seccion de soporte-->
+    <section id="Soporte" class="support-section">
+      <div class="container">
+        <h2 class="section-title">Soporte</h2>
+        <div class="support-content">
+          <div class="contact-info">
+            <h3>Contáctanos</h3>
+            <p>Estamos aquí para ayudarte. Contáctanos por correo electrónico o WhatsApp:</p>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:soporte@mcstore.com">soporte@mcstore.com</a>
+              </div>
+              <div class="contact-method">
+                <i class="fab fa-whatsapp"></i>
+                <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-button">
+                  <span>Chatear por WhatsApp</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h3>Envíanos un mensaje</h3>
+            <form id="supportForm">
+              <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Nombre" required>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" placeholder="Describe el problema" required></textarea>
+              </div>
+              <button type="submit" class="submit-button">Enviar mensaje</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin seccion de soporte-->
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="assets/img/logo-mcstore.png" alt="MCStore">
+        <span class="brand-name">MC<span class="highlight">Store</span></span>
+      </div>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Productos</h4>
+          <ul class="footer-links">
+            <li><a href="#">Insumos de Repostería</a></li>
+            <li><a href="#">Decoraciones</a></li>
+            <li><a href="#">Herramientas</a></li>
+            <li><a href="#">Novedades</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Soporte</h4>
+          <ul class="footer-links">
+            <li><a href="#">Centro de Ayuda</a></li>
+            <li><a href="#">Envíos</a></li>
+            <li><a href="#">Devoluciones</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Compañía</h4>
+          <ul class="footer-links">
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Trabaja con Nosotros</a></li>
+            <li><a href="#">Términos y Condiciones</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Síguenos</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 MCStore. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="assets/js/scriptjs.js"></script>
+</body>
+
+</html>
