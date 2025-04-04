@@ -1,6 +1,6 @@
 /* Variables globales */
 :root {
-    --primary-color: #ff6b6b;
+    --primary-color: rgb(230, 117, 34 );
     --secondary-color: #4ecdc4;
     --dark-color: #2d3436;
     --light-color: #f9f9f9;
