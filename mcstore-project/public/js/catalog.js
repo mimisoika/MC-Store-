@@ -9,7 +9,7 @@ const applyFiltersBtn = document.querySelector('.apply-filters');
 const categoryCheckboxes = document.querySelectorAll('input[name="category"]');
 const shippingCheckboxes = document.querySelectorAll('input[name="shipping"]');
 
-// Sample Products Data (Replace with your actual data)
+// Sample Products Data
 const products = [
     {
         id: 1,
